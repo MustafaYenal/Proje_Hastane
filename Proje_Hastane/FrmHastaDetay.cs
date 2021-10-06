@@ -37,7 +37,7 @@ namespace Proje_Hastane
             //Randevu geçmişi
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter("Select * from Tbl_Randevular where HastaTC="+ tc, bgl.baglanti());
-            da.Fill(dt);
+            da.Fill(dt); 
             dataGridView1.DataSource = dt;
 
             //branş çekme.
